@@ -1,0 +1,99 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+    
+    </style>
+    
+    <style name="MyTabStyle" parent="android:Widget.ActionBar.TabBar">
+    <item name="android:background">@drawable/actionbarbackground</item>
+</style>
+
+        <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbarbackground</item>
+        <item name="android:backgroundStacked">@drawable/actionbarbackground</item>
+        <item name="android:backgroundSplit">@drawable/actionbarbackground</item>
+    </style>
+    
+ <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_blooddonor</item>
+    </style>
+        
+ 
+ 
+  <style name="Theme.Blooddonor" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_blooddonor</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Blooddonor</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Blooddonor</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Blooddonor</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Blooddonor</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Blooddonor</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_blooddonor</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_blooddonor</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Blooddonor</item>
+        
+        
+    </style>
+
+    <style name="ActionBar.Solid.Blooddonor" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_blooddonor</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_blooddonor</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_blooddonor</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Blooddonor</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Blooddonor" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_blooddonor</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Blooddonor</item>
+    </style>
+
+    <style name="PopupMenu.Blooddonor" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_blooddonor</item>	
+    </style>
+
+    <style name="DropDownListView.Blooddonor" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_blooddonor</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Blooddonor" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_blooddonor</item>
+    </style>
+
+    <style name="DropDownNav.Blooddonor" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_blooddonor</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_blooddonor</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_blooddonor</item>
+    </style>
+    
+    <style name="ProgressBar.Blooddonor" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_blooddonor</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Blooddonor" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_blooddonor</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Blooddonor.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Blooddonor</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Blooddonor</item>
+    </style>
+
+ 
+ 
+ 
+</resources>

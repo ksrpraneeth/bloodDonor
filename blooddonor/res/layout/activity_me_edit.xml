@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/namelayout"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittextround"
+            android:hint="Enter Name"
+            android:padding="5dp"
+            android:paddingLeft="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bloodlayout"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/namelayout"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Spinner
+            android:id="@+id/bloodedit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittextround"
+            android:hint=""
+            android:padding="5dp"
+            android:paddingLeft="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doblayout"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bloodlayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittextround"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:paddingLeft="7dp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/dobcalendar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="20"
+            android:src="@drawable/calander"
+            android:text="calendar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lodlayout"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/doblayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittextround"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lastdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:ems="10"
+            android:hint="Last Date Of Donation"
+            android:paddingLeft="7dp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/lastcalendar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="20"
+            android:src="@drawable/calander"
+            android:text="calendar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendEditToserver"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lodlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttoncolor"
+        android:text="Save" />
+
+</RelativeLayout>

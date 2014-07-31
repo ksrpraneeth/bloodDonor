@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/worldmap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donecode"
+        android:layout_margin="5dp"
+        android:src="@drawable/worldmap" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifycode"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="80dp"
+        android:text="Enter verification code which we sent you." />
+
+    <EditText
+        android:id="@+id/verifycode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/edittextround"
+        android:ems="10"
+        android:hint="Verification Code"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/donecode"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/buttoncolor"
+        android:text="Verify"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/reSendVerify"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_alignTop="@+id/worldmap"
+         android:layout_marginTop="20dp"
+         android:text="Resend Code?" />
+
+     <TextView
+         android:id="@+id/reEnterNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/reSendVerify"
+         android:layout_alignBottom="@+id/reSendVerify"
+         android:layout_alignRight="@+id/verifycode"
+         android:text="Re enter number?" />
+
+</RelativeLayout>

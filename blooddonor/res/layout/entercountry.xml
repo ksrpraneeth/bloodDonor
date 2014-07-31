@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/blooddonorname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blooddonorname" />
+
+    <TextView
+        android:id="@+id/entercountry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blooddonorname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittextround"
+        android:hint="Choose Your Country"
+        android:padding="10dp"
+        android:paddingLeft="5dp" />
+
+    <LinearLayout
+        android:id="@+id/mobilelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entercountry"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/isdcode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="20"
+            android:background="@drawable/edittextround"
+            android:ems="10"
+            android:hint="+91"
+            android:paddingLeft="5dp"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/mobilenumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="80"
+            android:background="@drawable/edittextround"
+            android:hint="  Enter Mobile Number"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp" 
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mobilelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttoncolor"
+        android:text="Verify"
+        android:textColor="#ffffff" 
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/worldmap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send"
+        android:layout_margin="5dp"
+        android:src="@drawable/worldmap" />
+
+</RelativeLayout>

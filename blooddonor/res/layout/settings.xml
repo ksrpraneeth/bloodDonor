@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+
+     
+    <PreferenceCategory android:title="User Settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefNotification"
+            android:summary="Receive Blood Donor Notifications from nearby people"
+            android:title="Receive Notifications" >
+        </CheckBoxPreference>
+         <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSettings"
+            android:summary="Alert sound when notification is received"
+            android:title="Notification Sound" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

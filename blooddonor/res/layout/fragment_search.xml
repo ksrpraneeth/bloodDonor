@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.blooddonor.Search" >
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/onnetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="xxxx on Network"
+            android:textColor="#d71920"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/entergroup"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/onnetwork"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextround" />
+
+        <Spinner
+            android:id="@+id/enterunits"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/entergroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextround" />
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/enterunits"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextround"
+            android:hint="Name of Hospital"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <com.example.blooddonor.CustomAutoCompleteTextView
+            android:id="@+id/atv_places"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextround"
+            android:hint="Locality"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/Sendtoserver"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atv_places"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttoncolor"
+            android:text="Send"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/succesfullSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sendtoserver"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</ScrollView>
